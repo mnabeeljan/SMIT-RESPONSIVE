@@ -1,41 +1,42 @@
-*{
+  *{
     margin: 0px;
     padding: 0px;
   
 }
 
 body{
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
   background-color: rgba(186, 181, 181, 0.426);
 }
 
 
 
 .header{
-    height: 12vh;
+    width: 100%;
+    height: auto;
     background-color: blue;
 }
 
 .links{
+  display: inline-flex;
+  width: 40%;
+  margin-top: 10px;
   
-  display: inline-block;
 }
 
 i{
     color: white;
-    margin-top: 25px;
+    margin: 20px auto;
     padding-left: 25px;
     font-size: 25px;
 }
 
 .p1{
-    text-align: center;
-    font-size: 25px;
+    display: inline-flex;
+    width: 59%;
+    font-size: 18px;
     color: white;
-    margin-top: -40px;
-    margin-left: 40px;
+    margin-top: -5px;
+    
 }
 
 
@@ -67,14 +68,14 @@ span{
 .p2{
     background-color: blue;
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: white;
     
 }
 
 .logo-image{
-  width: 40%;
+  width: 45%;
   margin: 0px auto;
   
 
@@ -88,11 +89,12 @@ span{
 
 
 .p3{
+    display: block;
     color: black;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
-    margin-left: 150px;
+    margin: 0px auto;
     
     
 }
@@ -184,24 +186,25 @@ span{
   }
 
   .flex-container{
+    display: flex;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 25px; 
+     
     
   }
 
   .flex-box{
-    width: 450px;
+    width: 350px;
     height: 200px;
     background: #ffffff;
     font-size: 25px;
     text-align: center;
     line-height: 200px;
     border-radius: 20px;
-    margin: 25px;
+    margin: 10px auto; 
     color: #152db5;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
@@ -210,24 +213,23 @@ span{
   }
 
 .project{
+  display: flex;
   background: white;
   width: 100%;
-  height: 450px;
-  display: flex ;
+  height: 700px;
   padding-top: 3%;
   
 }
 
   .left{
-    width: 50%;
+    width: 49%;
     color: #152db5;
-    margin-left: 100px;
+    
 
   }
 
   .right{
     width: 30%;
-    float: right;
     color: #152db5;
     
   }
@@ -283,7 +285,7 @@ span{
     border-radius: 13px;
     box-shadow: 4px 7px 7px 0px gray;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px auto;
     transition: 400ms;
   }
 
@@ -298,38 +300,39 @@ span{
     
   .header{
     width: 100%;
-    height: 20vh;
+    height: auto;
 
   }
   .links{
-    display: inline-block;
+    display: block;
     width: 100%;  
-    margin: 0px 10px;
+    text-align: center;
     
     
   }
   i{
-    font-size: 15px;
+    font-size: 1em;
   }
   .p1{
-    display: inline-flex;
+    display: flex;
     font-size: small;
-    margin: 0px auto;
+    margin: 5px auto;
       
   }
  
   .img{
-    display: inline-block;
-    width: 60%;
+    display: block;
+    width: 100%;
   }
   .p2{
-    display: inline-flex;
+    display: block;
     width: 100%;
-    font-size: 5px;
+    font-size: 1em;
     
   }
 
   .p3{
+    display: block;
     width: 100%;
     font-size: x-small;
     margin-left: 0px;
@@ -340,13 +343,13 @@ span{
     margin-top: 200px;
     text-align: center;
     font-weight: 600;
-    font-size: 1em;;
+    font-size: 1em;
   }
 
 
   .logo-image{
     display: block;
-    width: 90%;
+    width: 80%;
     margin: 0px auto;
     
   
@@ -358,28 +361,29 @@ span{
   }
 
   .flex-container{
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
     margin-left: 0px;
   
     
   }
 
   .flex-box{
-    width: auto;
-    height: 200px;
+    width: 80%;
+    height: 150px;
+    font-size: 1em;
   }
   
   .project{
     display: block;
-    widows: auto;
-    height: 1000px;
+    width: 100%;
+    height: 800px;
    
   }
   .left{
     display: block;
-    width: 97%;
+    width: 100%;
     color: #152db5;
     margin-left: 0px;
     font-size: 20px;
@@ -388,7 +392,7 @@ span{
 
   .right{
     display: block;
-    width: 97%; 
+    width: 100%; 
     margin-left: 0px;
     color: #152db5;
  
@@ -409,14 +413,14 @@ span{
   }
 
   .images{
-    display: block;
+    display: flex;
     width: 100%;
   }
   
   .images img{
       display: block;
-      width: 350px;
-      margin: 20px auto;
+      width: 250px;
+      margin: 0px auto;
       height: 150px;
       
   }
@@ -427,36 +431,36 @@ span{
 @media (min-width: 300px) and (max-width: 350px){
   .header{
     width: 100%;
-    height: 15vh;
+    height: auto;
 
   }
 
   .links{
     display: block;
     width: 100%;
-  
-    text-align: center;
-    
+    text-align: center;    
+      
   }
 
   i{
-    font-size: 20px;
+    font-size: 2em;
+    
     
   }
   .p1{
-    display: inline-block;
+    display: block;
     font-size: small;
     margin: 0px auto;
       
   }
  
   .img{
-    display: inline-block;
-    width: 50%;
-    height: 50px;
+    display: flex;
+    width: 100%;
+  
   }
   .p2{
-    display: inline-flex;
+    display:flex;
     width: 100%;
     font-size: 10px;
     
@@ -491,28 +495,30 @@ span{
   }
 
   .flex-container{
+    display: flex;
     width: 100%;
     height: auto;
-    display: block;
     margin-left: 0px;
   
     
   }
 
   .flex-box{
-    width: auto;
+    display: flex;
+    width: 80%;
     height: 150px;
+    font-size: 1em;
   }
   
   .project{
-    display: block;
-    widows: auto;
-    height: 1000px;
+    display: flex;
+    width: 100%;
+    height: 800px;
    
   }
   .left{
-    display: block;
-    width: 97%;
+    
+    width: 99%;
     color: #152db5;
     margin-left: 0px;
     font-size: 20px;
@@ -520,8 +526,8 @@ span{
   }
 
   .right{
-    display: block;
-    width: 97%; 
+  
+    width: 99%; 
     margin-left: 0px;
     color: #152db5;
  
@@ -529,7 +535,7 @@ span{
   }
 
   .last-para{
-    display: block;
+    display: flex;
     width: 100%;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -548,8 +554,8 @@ span{
   
   .images img{
       display: block;
-      width: 220px;
-      margin: 20px auto;
+      width: 250px;
+      margin: 0px auto;
       height: 120px;
       
   }
@@ -559,41 +565,44 @@ span{
 @media (min-width: 350px) and (max-width: 400px){
   .header{
     width: 100%;
-    height: 15vh;
+    height: 20vh;
 
   }
 
   .links{
     display: block;
-    width: 100% auto;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
     
   }
   i{
-    font-size: 24px;
+    font-size: 25px;
   }
   .p1{
     display: block;
-    font-size: small;
     width: 100%;
-    height: auto;
+    font-size: 17px;
     margin: 0px auto;
     
   }
 
+  
+
   .img{
     display: inline-block;
-    width: 50%;
+    
+    
   }
   .p2{
-    display: inline-flex;
+    display: block;
     width: 100%;
     font-size: medium;
     
   }
 
   .p3{
+    display: block;
     width: 100%;
     font-size: 15px;
     margin-left: 0px;
@@ -608,21 +617,30 @@ span{
   }
 
   .logo-image{
-    width: 300px;
-    height: 300px;
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+
+  }
+
+  .logo{
+    width: 100%;
+   
   }
 
   .flex-container{
+    display: flex;
     width: 100%;
     height: auto;
-    display: block;
     margin-left: 0px;
   
     
   }
 
   .flex-box{
-    width: auto;
+    width: 80%;
+    margin: 0px auto;
     height: 200px;
   }
 
@@ -631,11 +649,12 @@ span{
   } 
     
   .project{
-    display: block;
+    display: flex;
     width: 100%;
     height: 1000px;
   }
   .left{
+    
     width: 100%;
     color: #152db5;
     margin-left: 0px;
@@ -667,7 +686,7 @@ span{
   .images img{
       display: block;
       width: 250px;
-      margin: 20px auto;
+      margin: 0px auto;
       height: 150px;
       
   }
@@ -681,7 +700,7 @@ span{
   }
   .links{
     display: block;
-    width: 100% auto;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
     
@@ -725,8 +744,7 @@ span{
   }
 
   .logo-image{
-    width: 300px;
-    height: 300px;
+    width: 70%;
   }
 
   .flex-container{
@@ -739,8 +757,9 @@ span{
   }
 
   .flex-box{
-    width: auto;
+    width: 75%;
     height: 200px;
+    margin: 10px auto;
   }
 
   .flex-box i{
@@ -766,7 +785,7 @@ span{
   }
 
   .last-para{
-    display: inline;
+    display: block;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -784,7 +803,7 @@ span{
   .images img{
       display: block;
       width: 350px;
-      margin: 20px auto;
+      margin: 0px auto;
       height: 250px;
       
   }
@@ -961,7 +980,7 @@ span{
     width: 80%;
     text-align: center;
     font-size: 25px;
-    margin-left: 40px;
+    margin: 0px auto;
   }
 
   h2{
@@ -973,23 +992,27 @@ span{
   }
 
   .logo-image{
-    width: 300px;
-    height: 300px;
+    width: 70%;
+    margin: 0px auto;
+  
+  }
+  .logo{
+    width: 100%;
   }
 
   .flex-container{
+    display: flex;
     width: 100%;
     height: auto;
-    display: block;
     margin-left: 0px;
   
     
   }
 
   .flex-box{
-    width: 400px;
+    width: 450px;
     height: 200px;
-    margin: 20px auto;
+    margin: 10px auto;
     display: block;
   }
 
@@ -1299,16 +1322,17 @@ span{
   }
   .p1{
     display: block;
-    font-size: 25px;
+    font-size:25px;
     width: 100%;
     height: auto;
     margin: 0px auto;
+    text-align: center
     
   }
 
   .img{
     display: inline-block;
-    width: 60%;
+    width: 100%;
   }
   .p2{
     display: inline-flex;
@@ -1334,11 +1358,12 @@ span{
   }
 
   .logo-image{
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    
   }
 
   .flex-container{
+    display: flex ;
     width: 100%;
     height: auto;
     display: block;
@@ -1348,7 +1373,7 @@ span{
   }
 
   .flex-box{
-    width: 400px;
+    width: 450px;
     height: 200px;
     margin: 20px auto;
     display: block;
@@ -1401,1306 +1426,4 @@ span{
   }
 }
 
-@media (min-width: 900px) and (max-width: 950px){
-  .header{
-    width: 100%;
-    height: 20vh;
 
-  }
-  .links{
-    display: block;
-    width: 100% auto;
-    margin: 0px auto;
-    text-align: center;
-    
-  }
-  i{
-    font-size: 30px;
-  }
-  .p1{
-    display: block;
-    font-size: 25px;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    
-  }
-
-  .img{
-    display: inline-block;
-    width: 60%;
-  }
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: larger;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 80%;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 70px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 350px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px
-  }
-
-  .logo-image{
-    width: 350px;
-    height: 350px;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0px;
-  
-    
-  }
-
-  .flex-box{
-    width: 400px;
-    height: 200px;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .flex-box i{
-    font-size: 40px;
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 700px;
-  }
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 97%;
-    color: #152db5;
-    
-  }
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-  }
-
-  h1{
-    font-size: 50px;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 500px;
-      margin: 20px auto;
-      height: 300px;
-      
-  }
-}
-
-@media (min-width: 950px) and (max-width: 991px){
-  .header{
-    width: 100%;
-    height: 20vh;
-
-  }
-  .links{
-    display: block;
-    width: 100% auto;
-    margin: 0px auto;
-    text-align: center;
-    
-  }
-  i{
-    font-size: 30px;
-  }
-  .p1{
-    display: block;
-    font-size: 25px;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    
-  }
-
-  .img{
-    display: inline-block;
-    width: 50%;
-  }
-
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: larger;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 80%;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 70px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 350px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px
-  }
-
-  .logo-image{
-    width: 350px;
-    height: 350px;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0px;
-  
-    
-  }
-
-  .flex-box{
-    width: 400px;
-    height: 200px;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .flex-box i{
-    font-size: 40px;
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 700px;
-  }
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 97%;
-    color: #152db5;
-    
-  }
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-  }
-
-  h1{
-    font-size: 50px;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 500px;
-      margin: 20px auto;
-      height: 300px;
-      
-  }
-}
-
-/* @media (min-width: 991px) and (max-width: 1050px){
-  .header{
-    width: 100%;
-    height: 20vh;
-
-  }
-  .links{
-    display: inline-flex;
-    width: 100%;
-    margin-left: 250px;
-    
-  }
-  i{
-    font-size: 30px;
-  }
-  .p1{
-    display: block;
-    font-size: 25px;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    
-  }
-
-  .img{
-    display: inline-block;
-    width: 50%;
-  }
-
-  .navbar ul li a{
-    width: 100%;
-  }
-
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: larger;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 80%;
-    text-align: center;
-    font-size: 25px;
-    margin-left: 70px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 350px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px
-  }
-
-  .logo-image{
-    width: 350px;
-    height: 350px;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0px;
-  
-    
-  }
-
-  .flex-box{
-    width: 500px;
-    height: 200px;
-    margin-left: 230px;
-  }
-
-  .flex-box i{
-    font-size: 40px;
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 700px;
-  }
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 97%;
-    color: #152db5;
-    
-  }
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-  }
-
-  h1{
-    font-size: 50px;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 500px;
-      margin: 20px auto;
-      height: 300px;
-      
-  }
-  
-} */
-
-
-
-
- /* @media screen and (min-width:401px) {
-  .header{
-    width: 100%;
-    height: 20vh;
-
-  }
-  .links{
-    display: inline-flex;
-    width: 100%;
-    margin-left: 30px; 
-    
-  }
-  i{
-    font-size: 24px;
-  }
-  .p1{
-    display: block;
-    font-size: small;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-    
-  }
-  .button{
-    display: none; 
-    width: 100%;
-    margin-top: -10px;
-  
-    
-  }
-
-
-  .img{
-    display: inline-block;
-    width: 50%;
-  }
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: larger;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: small;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 200px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1em;;
-  }
-
-  .logo-image{
-    width: 100%;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0px;
-  
-    
-  }
-
-  .flex-box{
-    width: auto;
-    height: 200px;
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 1000px;
-  }
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 97%;
-    color: #152db5;
-    
-  }
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-  }
-
-  h1{
-    font-size: x-large;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 300px;
-      margin: 20px auto;
-      height: 200px;
-      
-  }
-    
-} */
-
-
-/* @media screen and (min-width:450px) {
- 
-  .header{
-    width: 100%;
-    height: 17vh;
-
-
-  }
-  .links{
-    display: inline-flex;
-    margin-left: 40px;
-    
-  }
-  .p1{
-    margin-top: 2px;
-  }
-
-  .img{
-    display: inline-block;
-    width: 60%;
-  }
-
-  .project{
-    display: block;
-    width: 100%;
-    height: 1000px;
-  }
-
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 100%;
-    color: #152db5;
-    
-  }
-
-  
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-
-  i{
-    font-size: 25px;
-  }
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 400px;
-      margin: 20px auto;
-      height: 200px;
-      
-  }
-} */
-
-/* @media screen and (min-width:500px) {
- 
-  .header{
-    width: 100%;
-    height: 16vh;
-
-
-  }
-  .links{
-    display: inline-flex;
-    margin-left: 75px;
-    
-  }
-
-  i{
-    font-size: 29px;
-  }
-.img{
-  display: inline-block;
-  width: 70%;
-}
-
-  .p1{
-    display: inline-flex;
-    font-size: larger;
-    text-align: center;
-    width: 100%;
-    margin-top: 5px;
-    
-  }
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: x-large;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: small;
-    margin-left: 0px;
-  }
-
-  .images{
-    display: inline-block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 450px;
-      margin: 20px auto;
-      height: 250px;
-    
-      
-  }
-
-  .project{
-    display: block;
-    width: 100%;
-    height: 900px;
-  }
-
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 100%;
-    color: #152db5;
-    
-  }
-
- 
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-  }
-} */
-
-/* @media screen and (min-width:550px) {
- 
-  .header{
-    width: 100%;
-    height: 15vh;
-
-
-  }
-  .links{
-    display: inline-flex;
-    margin-left: 70px;
-    
-  }
-
-  i{
-    font-size: 27px;
-  }
-  .p1{
-    display: inline-flex;
-    font-size: larger;
-    width: 100%;
-    margin-top: 5px;
-    
-  }
-  .p2{
-    display: inline-flex;
-    width: 100%;
-    font-size: x-large;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: small;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 200px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1em;;
-  }
-
-
-
-  
-  .project{
-    display: block;
-    width: 100%;
-    height: 900px;
-  }
-  .left{
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 100%;
-    color: #152db5;
-    
-  }
-
-  .last-para{
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 480px;
-      margin: 20px auto;
-      height: 300px;
-      
-  }
-} */
-
-
-
-
-
-/* @media screen and (min-width:600px) {
-   
-  .header{
-    width: 100%;
-    height: 25vh;
-
-  }
-  .links{
-    display: block;
-    margin-left: 80px;
-    
-  }
-  i{
-    font-size: 36px;
-  }
-  .p1{
-    display: block;
-    font-size: x-large;
-    width: 100%;
-    margin-top: 5px;
-    
-  }
-
-  
-
-  .img{
-    display: inline-block;
-    width: 70%;
-  }
-  .p2{
-    display: inline-block;
-    width: 100%;
-    font-size: x-large;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: large;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 200px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2em;;
-  }
-  .logo-image{
-    width: 70%;
-    margin: 0px auto;
-    
-  
-  }
-  
-  .logo{
-    display: block;
-    width: 100%;
-    margin: 25px auto;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-    margin-left: 0px;
-    align-items: center;
-  
-    
-  }
-
-  .flex-box{
-    width: 70%;
-    height: 200px;
-    margin: 10px auto;
-  
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 900px;
-  }
-  .left{
-    display: block;
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 100%;
-    color: #152db5;
-    
-  }
-  
-
-  h1{
-    font-size: xx-large;
-  }
-
-  .images{
-    display: block;
-    width: 100%;
-  }
-  
-  .images img{
-      display: block;
-      width: 400px;
-      margin: 20px auto;
-      height: 250px;
-      
-  }
-} */
-
-
-/* @media screen and (min-width:700px) {
-   
-  .header{
-    width: 100%;
-    height: 20vh;
-
-  }
-  .links{
-    display: block;
-    width: 100%;
-  }
-  i{
-    font-size: 32px;
-  }
-  .p1{
-    display: block;
-    font-size: larger;
-    width: 100%;
-    text-align: center;
-    
-  }
-  
-    
-  .img{
-    display: block;
-    width: 60%;
-  }
-  .p2{
-    display: inline-block;
-    width: 100%;
-    font-size: large;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: x-large;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 200px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 40px;
-  }
-
-  .wrapper {
-    position: relative;
-    width: 80vw;
-    transform: translate(-50%, -50%);
-    top: 200px;
-    left: 50%;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  .container {
-    width: 28vmin;
-    height: 28vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1em 0;
-    position: relative;
-    font-size: 16px;
-    border-radius: 0.5em;
-    background-color: #152db5;
-    border-bottom: 10px solid #2ca736;
-  }
-  .logo-image{
-    width: 70%;
-    margin: 0px auto;
-    
-  
-  }
-  
-  .logo{
-    display: block;
-    width: 100%;
-    margin: 25px auto;
-  }
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-
-  .flex-box{
-    width: 350px;
-    height: 250px;
-    background: #ffffff;
-    font-size: 25px;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 20px;
-    color: #152db5;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    box-shadow: 5px 10px 5px rgb(90, 83, 83);
-
-  }
-    
-  .project{
-    display: block;
-    width: 100%;
-    height: 750px;
-  }
-  .left{
-    display: block;
-    width: 100%;
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    display: block;
-    width: 100%;
-    color: #152db5;
-    
-  }
-
-  h2{
-    font-size: 30px;
-  }
-
-  h1{
-    font-size: xx-large;
-  }
-
-  .images{
-    display: flex;
-    width: 100%;
-  }
-  
-  .images img{
-      width: 40%;
-      margin: 20px auto;
-      height: 200px;
-      
-  }
-} */
-
-
-/* @media screen and (min-width:800px) {
-   
-  .header{
-    width: 100%;
-    height: auto;
-
-  }
-  .links{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin: 0px auto;
-    
-  }
-  i{
-    font-size: 35px;
-  }
-  .p1{
-    display: inline-block;
-    font-size: larger;
-    width: 100%;
-    margin-top: 5px;
-    text-align: center;
-    
-  }
- 
-  .img{
-    display: inline-block;
-    width: 60%;
-    margin-top: 20px;
-  }
-  .p2{
-    display: inline-block;
-    width: 100%;
-    font-size: large;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: x-large;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 250px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 2em;;
-  }
-
-  .logo-image{
-    width: 60%;
-    margin: 0px auto;
-    
-  
-  }
-  
-  .logo{
-    display: block;
-    width: 100%;
-    margin: 25px auto;
-  }
- 
-
-
-  .flex-container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-
-  .flex-box{
-    width: 400px;
-    height: 200px;
-    background: #ffffff;
-    font-size: 25px;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 20px;
-    color: #152db5;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    box-shadow: 5px 10px 5px rgb(90, 83, 83);
-
-  }
-    
-  .project{
-    display: flex;
-    width: 100%;
-    height: 600px;
-  }
-  .left{
-    width: 60%; 
-    color: #152db5;
-    margin-left: 0px;
-
-  }
-
-  .right{
-    width: 40%;
-    color: #152db5;
-    
-  }
-
-  h1{
-    font-size: 50px;
-  }
-
-  .images{
-    display: flex;
-    width: 100%;
-  }
-  
-  .images img{
-      width: 400px;
-      margin: 20px auto;
-      height: 200px;
-      
-  }
-} */
-
-
-
-/* @media screen and (min-width:900px) {
- 
-  .header{
-    width: 100%;
-    height: 20vh;
-
-  }
-
-  
-  .links{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin: 0px auto;
-    
-  }
-
-  i{
-    font-size: 35px;
-  }
-
-  .p1{
-    display: inline-block;
-    font-size: larger;
-    width: 100%;
-    margin-top: 5px;
-    text-align: center;
-    
-  }
-  .button{
-    display: inline-flex; 
-    width: 100%;
-    margin-top: 0px;
-    margin-right: 7px;
-  
-    
-  }
-
-  button{
-    margin: 0px auto;
-    word-spacing: 20px;
-    display: inline-block;
-    width: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .img{
-    display: inline-block;
-    width: 60%;
-    margin-top: 20px;
-  }
-  .p2{
-    display: inline-block;
-    width: 100%;
-    font-size: large;
-    text-align: center;
-    
-  }
-
-  .p3{
-    width: 100%;
-    font-size: x-large;
-    margin-left: 0px;
-  }
-
-  h2{
-    color: blue;
-    margin-top: 200px;
-    display: block; 
-     
-    text-align: center;
-    font-weight: 600;
-    font-size: 2em;
-  } 
-
-
-  .logo-image{
-    width: 70%;
-    margin: 0px auto;
-    
-  
-  }
-  
-  .logo{
-    display: block;
-    width: 100%;
-    margin: 25px auto;
-  } 
-
-   .flex-container{
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-    
-  
-    
-  } 
- 
-
-
-   .flex-container{
-     width: 100%;
-     height: auto;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap; 
-     
-  }
-
-  .flex-box{
-    width: 400px;
-    height: 200px;
-    background: #ffffff;
-    font-size: 25px;
-    text-align: center;
-    line-height: 200px;
-    border-radius: 20px; 
-     color: #152db5;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    box-shadow: 5px 10px 5px rgb(90, 83, 83);
-
-  }
-    
-  .project{
-    display: flex;
-    width: 100%;
-    height: 600px;
-  }
-  .left{
-     width: 60%; 
-    color: #152db5;
-    margin-left: 0px;
-
-  } 
-
-   .right{ 
-     display: block; 
-     width: 40%;
-    color: #152db5;
-    
-  }
-
-  h1{
-    font-size: 50px;
-  }
-
-  .images{
-    display: flex;
-    width: 100%;
-  }
-   
-   .images img{ 
-      display: inline-flex; 
-      width: 400px;
-      margin: 20px auto;
-      height: 200px;
-      
-  }
-}  */
-
-
-
-/* @media screen and (min-width:1000px) {
-   
-   
-
-
-
-   } */
-    
